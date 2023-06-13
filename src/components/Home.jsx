@@ -1,12 +1,17 @@
 import HeroImage from "../assets/heroImage.jpg";
+import HeroImage2 from "../assets/heroImage2.jpg";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
+import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
+
+const images = [HeroImage, HeroImage2];
+const profile = images[Math.floor(Math.random() * images.length)];
 
 const Home = () => {
   return (
     <div
       name="home"
-      className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800 pt-32 md:pt-0"
+      className="md:h-screen w-full bg-gradient-to-b from-black via-black to-gray-800 pt-32 md:pt-0"
     >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
         <div className="flex flex-col justify-center h-full">
@@ -20,6 +25,27 @@ const Home = () => {
             Application from Punjab Technical University-affiliated college.
           </p>
 
+          {/* Icons */}
+          <div className="flex gap-2">
+            <a
+              href="https://www.linkedin.com/in/rajdeep-singh-webdev/"
+              target="_blank"
+              className="text-white mb-3 cursor-pointer"
+              rel="noreferrer"
+            >
+              <AiFillLinkedin size={25} />
+            </a>
+            <a
+              href="https://github.com/imrajdeeps"
+              target="_blank"
+              className="text-white mb-3 cursor-pointer"
+              rel="noreferrer"
+            >
+              <AiFillGithub size={25} />
+            </a>
+          </div>
+
+          {/* Portfolio button */}
           <div>
             <Link
               to="portfolio"
@@ -37,7 +63,7 @@ const Home = () => {
 
         <div>
           <img
-            src={HeroImage}
+            src={profile}
             alt="my profile"
             className="rounded-2xl mx-auto w-2/3 mt-10 md:mt-0 md:w-full"
           />

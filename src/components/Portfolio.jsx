@@ -14,12 +14,12 @@ const Portfolio = () => {
       title: "WeatherToday",
       src: weatherToday,
       demo: "https://weathertoday-n20g.onrender.com/",
-      code: "https://github.com/imrajdeeps/WeatherToday",
+      code: "https://github.com/imrajdeeps/weather-today",
     },
     {
       title: "FruitCart E-commerce website",
       src: fruitCart,
-      demo: "",
+      demo: "/",
       code: "https://github.com/imrajdeeps/fruitCart-php",
     },
   ];
@@ -43,7 +43,7 @@ const Portfolio = () => {
               key={id + "project"}
               className="shadow-md shadow-gray-600 rounded-lg"
             >
-              <p className="text-gray-500 text-center">{title}</p>
+              <p className="text-gray-500 text-center py-2">{title}</p>
 
               <img
                 src={src}

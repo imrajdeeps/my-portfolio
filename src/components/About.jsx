@@ -2,7 +2,7 @@ const About = () => {
   return (
     <div
       name="about"
-      className="w-full h-screen bg-gradient-to-b from-gray-800 to-black text-white"
+      className="w-full bg-gradient-to-b from-gray-800 to-black text-white pt-20 md:pt-0"
     >
       <div className="tracking-widest max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8">
@@ -10,7 +10,7 @@ const About = () => {
             About
           </p>
         </div>
-        <p className="text-xl mt-20">
+        <p className="text-xl mt-10">
           Welcome to my portfolio website! My name is Rajdeep Singh, and I am a
           passionate Full Stack Developer specializing in creating user-friendly
           web applications using the MERN Stack. With a strong background in BCA
